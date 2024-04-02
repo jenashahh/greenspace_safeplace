@@ -1,0 +1,89 @@
+---
+title: "Are Greener Spaces, Safer Places?"
+subtitle: "Investigating the Link Between Green Spaces and Crime in Toronto"
+author: 
+  - Jena Shah
+thanks: "Code and data are available at: https://github.com/shahjena/greenspace_safeplace.git."
+date: today
+date-format: long
+abstract: "Abstract TBD."
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+# Introduction
+
+TBD
+
+
+# Data {#sec-data}
+
+TBD
+
+
+# Model
+
+TBD
+
+
+## Model set-up
+
+TBD
+
+
+## Model justification
+
+TBD
+
+
+# Results
+
+TBD
+
+
+# Discussion
+
+## First discussion point {#sec-first-point}
+
+TBD 
+
+## Second discussion point
+
+TBD
+
+## Third discussion point
+
+TBD
+
+## Weaknesses and next steps
+
+TBD
+
+\newpage
+
+\appendix
+
+# Appendix {-}
+
+
+# Datasheet
+
+TBD
+
+# Model details {#sec-model-details}
+
+# Posterior predictive check
+
+TBD
+
+# Diagnostics
+
+TBD
+
+\newpage
+
+
+# References
+
+@citeR
