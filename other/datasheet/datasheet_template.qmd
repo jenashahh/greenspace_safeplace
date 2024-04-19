@@ -17,13 +17,11 @@ Extract of the questions from @gebru2021datasheets.
 **Motivation**
 
 1. *For what purpose was the dataset created? Was there a specific task in mind? Was there a specific gap that needed to be filled? Please provide a description.*
-    - TBD
+    - The dataset was created to analyze the relationship between the amount of green spaces in Toronto's neighborhoods and the corresponding crime rates. The goal was to understand if there is a correlation between green spaces and crime rates, which could help urban planners and policymakers in enhancing urban green spaces to potentially reduce crime rates.
 2. *Who created the dataset (for example, which team, research group) and on behalf of which entity (for example, company, institution, organization)?*
-    - TBD
+    - Jena Shah created the dataset. She is a student at the University of Toronto.
 3. *Who funded the creation of the dataset? If there is an associated grant, please provide the name of the grantor and the grant name and number.*
-    - TBD
-4. *Any other comments?*
-    - TBD
+    - It was free.
 
 **Composition**
 

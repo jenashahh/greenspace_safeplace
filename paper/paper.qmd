@@ -7,7 +7,7 @@ thanks: "Code and data are available at: https://github.com/shahjena/greenspace_
 toc: true
 date: today
 date-format: long
-abstract: "This study examines the relationship between green spaces and crime rates in Toronto's neighborhoods using gamma regression models. The analysis reveals a positive association between the amount of green spaces and crime rates, indicating that neighborhoods with more green spaces tend to have higher crime rates. This finding emphasizes the relation between urban green spaces and public safety, suggesting that the presence of green spaces may present challenges for crime prevention and urban planning. Understanding these dynamics can help the government and urban planners in their efforts to create safer and more sustainable cities."
+abstract: "This study examines the relationship between green spaces and crime rates in Toronto's neighbourhoods using gamma regression models. The analysis reveals a positive association between the amount of green spaces and crime rates, indicating that neighbourhoods with more green spaces tend to have higher crime rates. This finding emphasizes the relation between urban green spaces and public safety, suggesting that the presence of green spaces may present challenges for crime prevention and urban planning. Understanding these dynamics can help the government and urban planners in their efforts to create safer and more sustainable cities."
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -164,32 +164,32 @@ The dataset for this study comprises four key variables that are central
 to the analysis. These variables are properly descibed below.
 
 1.  HOOD_ID (Neighbourhood ID): This variable serves as a unique
-    identifier for each neighborhood in Toronto, allowing us to
+    identifier for each neighbourhood in Toronto, allowing us to
     differentiate between different areas in our analysis.
 
 2.  AREA_NAME (Neighbourhood Name): This variable provides the name of
-    each neighborhood, providing context and a more intuitive
+    each neighbourhood, providing context and a more intuitive
     understanding of the data.
 
 3.  Green.Spaces (Amount of Green Spaces): This variable quantifies the
-    amount of green spaces in each neighborhood, measured in square
+    amount of green spaces in each neighbourhood, measured in square
     kilometers. Green spaces include parks, forests, and other areas
     covered by vegetation.
 
 4.  TOTAL_CRIMES (Total Crimes per Neighbourhood per 100000 People):
     This variable represents the total number of reported crimes per
-    neighborhood, standardized to a rate per 100000 people. It provides
-    a measure of the overall crime burden in each neighborhood,
+    neighbourhood, standardized to a rate per 100000 people. It provides
+    a measure of the overall crime burden in each neighbourhood,
     accounting for differences in population size.
 
 These variables were selected based on their relevance to the study's
 objective of examining the relationship between green spaces and crime
-rates. The inclusion of the neighborhood ID and name allows us to
-identify and differentiate between neighborhoods, while the Green.Spaces
+rates. The inclusion of the neighbourhood ID and name allows us to
+identify and differentiate between neighbourhoods, while the Green.Spaces
 variable provides a measure of the presence and extent of green spaces
 in each area. The TOTAL_CRIMES variable provides a measure of the
 overall crime rates, allowing us to assess the impact of green spaces on
-crime in different neighborhoods. @fig-one shows the different variables
+crime in different neighbourhoods. @fig-one shows the different variables
 and we can see the right-skew in the crimes total, which can help us
 decide what regression model to use in the next step.
 
@@ -198,7 +198,7 @@ decide what regression model to use in the next step.
 ## Model Set-up
 
 This study was done to investigate the relationship between the abundance of green
-spaces and crime rates in urban neighborhoods in Toronto by using a
+spaces and crime rates in urban neighbourhoods in Toronto by using a
 gamma regression model. This approach is suitable for analyzing count
 data with a skewed distribution, such as crime rates, where the response
 variable is non-negative and continuous.
@@ -207,7 +207,7 @@ variable is non-negative and continuous.
 
 The key variables used in the model are:
 
--   Dependent Variable: TOTAL_CRIMES (total crimes per neighborhood per
+-   Dependent Variable: TOTAL_CRIMES (total crimes per neighbourhood per
     100000 people).
 
 -   Independent Variable: Green.Spaces (amount of green spaces in square
@@ -246,16 +246,16 @@ relationship between green spaces and crime rates.
 
 Overall, the gamma regression model is well-suited for analyzing the
 relationship between green spaces and crime rates in Toronto's
-neighborhoods, providing a statistically interpretable
+neighbourhoods, providing a statistically interpretable
 approach to examining this important issue.
 
 # Results
 
-In the results, I found that green spaces have a statistically significant relationship with crime rates in Toronto's neighborhoods. The gamma regression model showed that as the amount of green spaces in a neighborhood increases, the total crimes per 100000 people also tend to increase. Specifically, for every unit increase in green spaces (measured in square kilometers), there was a corresponding increase in total crimes.
+In the results, I found that green spaces have a statistically significant relationship with crime rates in Toronto's neighbourhoods. The gamma regression model showed that as the amount of green spaces in a neighbourhood increases, the total crimes per 100000 people also tend to increase. Specifically, for every unit increase in green spaces (measured in square kilometers), there was a corresponding increase in total crimes.
 
 @tab-one presents the results of the explanatory model for crime rates based on green spaces. The intercept and coefficient for green spaces are both statistically significant, indicating that green spaces have a significant impact on crime rates. The model had 122 observations, and the log-likelihood was -943.227. The model's predictive performance was assessed using ELPD, LOOIC, WAIC, and RMSE, indicating a good fit of the model to the data.
 
-@fig-one illustrates this relationship with a scatterplot. It shows a concentration of data points at low to medium crime rates and low levels of green spaces. As the amount of green spaces increases, there are much fewer data points and they are more scattered, indicating higher crime rates in neighborhoods with more green spaces. The line of best fit in the scatterplot shows a nearly straight line, yet still highlighting the positive relationship between green spaces and crime rates.
+@fig-one illustrates this relationship with a scatterplot. It shows a concentration of data points at low to medium crime rates and low levels of green spaces. As the amount of green spaces increases, there are much fewer data points and they are more scattered, indicating higher crime rates in neighbourhoods with more green spaces. The line of best fit in the scatterplot shows a nearly straight line, yet still highlighting the positive relationship between green spaces and crime rates.
 
 @fig-two enhances this by presenting a line graph that shows the uncertainty shadow of the line of best fit. It demonstrates that the shadow is small at low to medium crime rates and low levels of green spaces, indicating higher certainty in the relationship. However, as the amount of green spaces increases, the shadow expands a lot, indicating more uncertainty in the relationship.
 
@@ -331,13 +331,13 @@ plot_predictions(my_model, condition = "Green.Spaces") +
 ```
 
 # Discussion
-In this study, I analyzed the relationship between green spaces and crime rates in Toronto's neighborhoods using gamma regression models. The results suggest a positive relationship between the amount of green spaces and crime rates, indicating that areas with more green spaces tend to have higher crime rates. However, it is important to note that this relationship does not imply causation.
+In this study, I analyzed the relationship between green spaces and crime rates in Toronto's neighbourhoods using gamma regression models. The results suggest a positive relationship between the amount of green spaces and crime rates, indicating that areas with more green spaces tend to have higher crime rates. However, it is important to note that this relationship does not imply causation.
 
-One of the key insights gained from this study is the potential impact of green spaces on crime rates in urban areas. The findings suggest that neighborhoods with more green spaces may face unique challenges in terms of crime prevention and urban planning. This knowledge can inform policymakers and urban planners in their efforts to create safer and more sustainable cities.
+One of the key insights gained from this study is the potential impact of green spaces on crime rates in urban areas. The findings suggest that neighbourhoods with more green spaces may face unique challenges in terms of crime prevention and urban planning. This knowledge can inform policymakers and urban planners in their efforts to create safer and more sustainable cities.
 
 ## Weaknesses and Next Steps
 
-Several limitations in this study should be acknowledged. Firstly, the green space data used in this analysis is from 2011, which may not accurately reflect the current green space distribution in Toronto. Additionally, the process of reducing the number of neighborhoods from 158 to 138 due to the removal the NA and 0 values could introduce bias into the analysis (so a total of 20 nighbourhoods were not considered in this study).
+Several limitations in this study should be acknowledged. Firstly, the green space data used in this analysis is from 2011, which may not accurately reflect the current green space distribution in Toronto. Additionally, the process of reducing the number of neighbourhoods from 158 to 138 due to the removal the NA and 0 values could introduce bias into the analysis (so a total of 20 nighbourhoods were not considered in this study).
 
 To deepen the understanding of relationships between green spaces and crime rates, future research should focus on using more recent green space data and exploring other factors that may influence crime rates in urban areas. For instance, economic status, social factor, and other demographics relating to the different neighbourhoods. Additionally, conducting similar studies in other cities instead of Toronto could help to determine the general idea behind these findings.
 
