@@ -395,4 +395,4 @@ plot(my_model, "rhat")
 
 # References
 
-@citeR @citeODT @burtka2023 @shepley2019 @vilkhovlaw
+@citeR @citeODT @burtka2023 @shepley2019 @vilkhovlaw @citetidy @citeME @citerstan @citeGG @citearrow
