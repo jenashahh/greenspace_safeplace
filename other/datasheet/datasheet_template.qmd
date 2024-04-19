@@ -1,12 +1,10 @@
 ---
-title: "Datasheet for 'A dataset'"
-subtitle: "My subtitle if needed"
+title: "Datasheet for 'Are Greener Spaces, Safer Places?'"
 author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: LINK."
-date: "`r Sys.time()`"
-date-format: "02 April 2024"
+  - Jena Shah
+thanks: "Code and data are available at: https://github.com/shahjena/greenspace_safeplace.git."
+date: today
+date-format: long
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
 format: pdf
 number-sections: true
